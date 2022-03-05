@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="E-Banking_V1" duration-ms="10614" started-at="2022-03-05T13:44:09 IST" finished-at="2022-03-05T13:44:20 IST">
+    <groups>
+    </groups>
+    <test name="Banking App Login" duration-ms="10614" started-at="2022-03-05T13:44:09 IST" finished-at="2022-03-05T13:44:20 IST">
+      <class name="eBanking.testCases.TC_LoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:eBanking.testCases.TC_LoginTest@7b49cea0]" name="setup" is-config="true" duration-ms="3216" started-at="2022-03-05T13:44:09 IST" finished-at="2022-03-05T13:44:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:eBanking.testCases.TC_LoginTest@7b49cea0]" name="loginTest" duration-ms="6395" started-at="2022-03-05T13:44:12 IST" finished-at="2022-03-05T13:44:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:eBanking.testCases.TC_LoginTest@7b49cea0]" name="teardown" is-config="true" duration-ms="671" started-at="2022-03-05T13:44:19 IST" finished-at="2022-03-05T13:44:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- eBanking.testCases.TC_LoginTest -->
+    </test> <!-- Banking App Login -->
+  </suite> <!-- E-Banking_V1 -->
+</testng-results>
