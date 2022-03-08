@@ -9,66 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">E-Banking_V1</th></tr>
-<tr><td><a href="#t0">Banking App Login</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">51,542</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Banking App Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,514</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E-Banking_V1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Banking App Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">eBanking.testCases.TC_AddNewCustomer</td><td><a href="#m0">addCustomerTest</a></td><td rowspan="1">1646635046048</td><td rowspan="1">4429</td></tr><tr class="failedodd"><td rowspan="4">eBanking.testCases.TC_LoginDDT_001</td><td><a href="#m1">loginDDT</a></td><td rowspan="4">1646635019608</td><td rowspan="4">3853</td></tr><tr class="failedodd"><td><a href="#m2">loginDDT</a></td></tr><tr class="failedodd"><td><a href="#m3">loginDDT</a></td></tr><tr class="failedodd"><td><a href="#m4">loginDDT</a></td></tr><tr class="failedeven"><td rowspan="1">eBanking.testCases.TC_LoginTest</td><td><a href="#m5">loginTest</a></td><td rowspan="1">1646635004163</td><td rowspan="1">4952</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E-Banking_V1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Banking App Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">eBanking.testCases.TC_LoginTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1646724227212</td><td rowspan="1">18588</td></tr></tbody>
 </table>
-<h2>Banking App Login</h2><h3 id="m0">eBanking.testCases.TC_AddNewCustomer#addCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=99.0.4844.51): User or Password is not valid
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;AHM-L-SOHANK&apos;, ip: &apos;10.212.136.153&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOHAN~1.KUL\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f137028cbe3220ccb07c67351ade18bf
-*** Element info: {Using=xpath, value=/html/body/div[3]/div/ul/li[2]/a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at eBanking.pageObject.AddCustomerPage.clickAddNewCustomer(AddCustomerPage.java:72)
-	at eBanking.testCases.TC_AddNewCustomer.addCustomerTest(TC_AddNewCustomer.java:51)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test1</td><td>wrog</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test2</td><td>wrong2</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test3</td><td>wrong3</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr385784</td><td>yhabUsa</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">eBanking.testCases.TC_LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=99.0.4844.51): User or Password is not valid
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;AHM-L-SOHANK&apos;, ip: &apos;10.212.136.153&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOHAN~1.KUL\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64650}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 52a6d6a237324a2c6ade783f505416d6
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:280)
-	at eBanking.testCases.TC_LoginTest.loginTest(TC_LoginTest.java:32)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Banking App Login</h2><h3 id="m0">eBanking.testCases.TC_LoginTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
