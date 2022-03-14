@@ -94,6 +94,20 @@ public class BaseClass{
 			return randomString;
 	}
 	
+	public String randomNumber()
+	{
+			String randomNumber = RandomStringUtils.randomNumeric(9);
+			return randomNumber;
+	}
 	
+	public boolean isAleartPresent() {
+		try {
+			driver.switchTo().alert();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
+	}
+
 	
 }

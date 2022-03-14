@@ -28,7 +28,7 @@ public class TC_LoginDDT_001 extends BaseClass {
 		if (isAleartPresent() == true) {
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
-			Assert.assertTrue(false);
+			Assert.assertTrue(true);
 			logger.warn("wrong credentials");
 		} else {
 			Assert.assertTrue(true);
@@ -42,15 +42,7 @@ public class TC_LoginDDT_001 extends BaseClass {
 		
 	}
 	
-	public boolean isAleartPresent() {
-		try {
-			driver.switchTo().alert();
-			return true;
-		} catch (NoAlertPresentException e) {
-			return false;
-		}
-	}
-
+	
 	
 
 	@DataProvider(name = "LoginData")

@@ -1,0 +1,45 @@
+#### Notes
+
+- anchor a is reefered to link on html page
+
+
+
+
+
+
+
+
+
+#### Xpath selector techniques
+1. //tagname[@attribute='value']
+
+- To verfify xPath in console
+$x('//tagname[@attribute="value"]') - just change the ' to " in value
+ 
+
+
+
+##### Different CSS selector techniques
+sample - <input type="text" id="c1" class="myclass" placeholder="username" value="">
+
+e.g.
+1. tagname.classname - input.myclass
+2. tagname#id - input#c1
+3. tagname[attribute='value'] - input[placeholder="username"]
+
+
+- To verify css in console
+$('input.myclass')
+
+
+#### To verify xPath or CSS by index
+//tagname[@attribute='value'][index 0-9]
+tagname[attribute='value']:nth-child(index 0-9)
+
+
+#### link text 
+By.linkText("Text present in 'a' tag)
+
+#### Traversing from parent to child
+Xpath- //parentTag/childTag
+css - parentTag childTag (CSS should not contain any space)

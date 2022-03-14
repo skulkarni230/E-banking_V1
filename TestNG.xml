@@ -10,11 +10,13 @@
 	<test name="Banking App Login">
 
 		<parameter name="browser" value="chrome" />
+		
 
 		<classes>
-			 <class name="eBanking.testCases.TC_LoginTest" />  
-			<!-- <class name="eBanking.testCases.TC_LoginDDT_001" />--> 
-			<!-- <class name="eBanking.testCases.TC_AddNewCustomer" /> -->
+			<!--<class name="eBanking.testCases.TC_LoginTest" />-->
+			<!--<class name="eBanking.testCases.TC_LoginDDT_001" />-->
+			<!--<class name="eBanking.testCases.TC_AddNewCustomer"/>-->
+			<class name="eBanking.testCases.TC_LoginTest2_Loop"/> 
 		</classes>
 
 
