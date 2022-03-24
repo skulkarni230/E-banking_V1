@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 54.799 sec <<< FAILURE! - in TestSuite
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 6.202 sec  <<< FAILURE!
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 18.467 sec <<< FAILURE! - in TestSuite
+loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 5.034 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -10,7 +10,7 @@ java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.assertTrue(Assert.java:55)
 	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
 
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 10.07 sec  <<< FAILURE!
+loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 3.325 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -18,7 +18,7 @@ java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.assertTrue(Assert.java:55)
 	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
 
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 10.567 sec  <<< FAILURE!
+loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 3.058 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -26,7 +26,7 @@ java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.assertTrue(Assert.java:55)
 	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:31)
 
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 4.21 sec  <<< FAILURE!
+loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 3.534 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)

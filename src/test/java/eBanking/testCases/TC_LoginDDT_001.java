@@ -47,7 +47,7 @@ public class TC_LoginDDT_001 extends BaseClass {
 
 	@DataProvider(name = "LoginData")
 	String[][] getData() throws IOException {
-		String path = "D:\\Selenium Setup\\UPC2.0\\E-Banking_V1\\src\\test\\java\\eBanking\\testData\\data.xlsx";
+		String path = "./\\src\\test\\java\\eBanking\\testData\\data.xlsx";
 		XLUtility xlutil = new XLUtility(path);
 		int rowNum = xlutil.getRowCount("Sheet1");
 		
