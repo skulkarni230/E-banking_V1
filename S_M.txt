@@ -1,0 +1,101 @@
+##### Drop Down by Select Class
+
+public void getCountry(String c)
+	{
+		System.out.println(c);
+		WebElement country = driver.findElement(By.name("country"));
+		Select dropdown = new Select(country);
+		dropdown.selectByValue(c);					
+	}
+	
+##### Drop Down by List 
+
+List<WebElement> opt = driver.findElements(serviceNameList);
+		
+		for(WebElement option : opt)
+		{
+			
+			Thread.sleep(1000L);
+			if (option.getText().equalsIgnoreCase(service))
+			{					
+				option.click();
+				break;
+			}
+
+##### Scrolling page down
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,800)");
+
+##### Hovering on element
+
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.cssSelector("#SALES_modules_dropdownMenu > div"))).perform();
+
+##### Switching to alert
+
+Accepting and switching back to default content -
+			driver.switchTo().alert().accept();
+			driver.switchTo().defaultContent();
+		
+##### Switching to child window and switching back to parent
+
+		Set<String> windows = driver.getWindowHandles();
+		Iterator<String> it = windows.iterator();
+		String parentId = it.next();
+		String childId = it.next();
+		driver.switchTo().window(childId);
+		driver.switchTo().window(parentId);
+		
+##### Reading from properties file
+
+	    Properties p1= new Properties();
+	    FileInputStream is = new FileInputStream("C:\\Users\\Sohan\\Desktop\\crm");
+	    p1.load(is);
+	    String url = p1.getProperty("url1");	
+		
+##### To go back by clicking in back arrow
+
+		driver.navigate().back();
+		
+##### Drag and Drop
+
+		 driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[class='demo-frame']"))); //SWITCHE SCOPE TO FRAMES
+		 Actions a = new Actions(driver); 
+		 WebElement s= driver.findElement(By.id("draggable")); //the element to drag 
+		 WebElement d = driver.findElement(By.id("droppable")); //the element to drop 
+		 a.dragAndDrop(s, d).build().perform();
+		 driver.switchTo().defaultContent();
+		 
+		 
+##### Clicking on all the links in page
+
+		private static void links(WebDriver driver) {
+		// TODO Auto-generated method stub
+
+		// GET ALL LINKS IN THE PAGE
+
+		driver.get("http://www.rahulshettyacademy.com/AutomationPractice/");
+		System.out.println(driver.findElements(By.tagName("a")).size());
+		WebElement fd = driver.findElement(By.id("gf-BIG")); // LIMITING SCOPE FOR FOOTER ROW
+		WebElement cd = fd.findElement(By.xpath("//table/tbody/tr/td[2]/ul")); // LIMITING SCOPE FOR COLUMN
+		int size = cd.findElements(By.tagName("a")).size();
+		System.out.println("Links present in Footer section 2nd Column :" + size);
+
+		// CLICLKING ON EACH LINK
+
+		for (int i = 0; i < cd.findElements(By.tagName("a")).size(); i++) {
+			String clickLink = Keys.chord(Keys.CONTROL, Keys.ENTER); // hit Control+Enter on link
+			cd.findElements(By.tagName("a")).get(i).sendKeys(clickLink);
+		}
+
+		Set<String> wH = driver.getWindowHandles();
+		Iterator<String> it = wH.iterator();
+
+		while (it.hasNext()) {
+			driver.switchTo().window(it.next());
+			System.out.println(driver.getTitle());
+		}
+
+	}
+

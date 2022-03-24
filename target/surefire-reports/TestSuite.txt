@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.417 sec - in TestSuite
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 91.379 sec <<< FAILURE! - in TestSuite
+loginTest(eBanking.testCases.TC_LoginTest2_without_DDT)  Time elapsed: 16.708 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
+
+loginTest(eBanking.testCases.TC_LoginTest2_without_DDT)  Time elapsed: 16.329 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
+

@@ -1,3 +1,4 @@
+eBanking\testCases\TC_LoginTest2_without_DDT.class
 eBanking\pageObject\AddCustomerPage.class
 eBanking\utilities\Reporting.class
 eBanking\testCases\TC_AddNewCustomer.class

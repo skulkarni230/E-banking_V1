@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-E_Banking_V1" class="navigator-link">
-              <span class="suite-name border-passed">E-Banking_V1</span>
+            <a href="#" class="navigator-link" panel-name="suite-E_Banking_V1">
+              <span class="suite-name border-failed">E-Banking_V1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-E_Banking_V1">
                     <span>D:\Selenium Setup\UPC2.0\E-Banking_V1\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-E_Banking_V1">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-E_Banking_V1">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-E_Banking_V1">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-E_Banking_V1">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-E_Banking_V1">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-E_Banking_V1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-E_Banking_V1">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-E_Banking_V1" class="hide-methods failed suite-E_Banking_V1"> (hide)</a> <!-- hide-methods failed suite-E_Banking_V1 -->
+                      <a href="#" panel-name="suite-E_Banking_V1" class="show-methods failed suite-E_Banking_V1"> (show)</a> <!-- show-methods failed suite-E_Banking_V1 -->
+                    </span>
+                    <div class="method-list-content failed suite-E_Banking_V1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginTest2_without_DDT" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginTest2_without_DDT" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-E_Banking_V1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,33 +122,33 @@
                     </span>
                     <div class="method-list-content passed suite-E_Banking_V1">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_AddNewCustomer" class="method navigator-link" hash-for-method="addCustomerTest">addCustomerTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_AddNewCustomer" hash-for-method="addCustomerTest">addCustomerTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" class="method navigator-link" hash-for-method="loginDDT(mngr385784, yhabUsa)">loginDDT(mngr385784, yhabUsa)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" hash-for-method="loginDDT(test2, wrong2)">loginDDT(test2, wrong2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" class="method navigator-link" hash-for-method="loginDDT(test1, wrog)">loginDDT(test1, wrog)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" hash-for-method="loginDDT(mngr385784, yhabUsa)">loginDDT(mngr385784, yhabUsa)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" class="method navigator-link" hash-for-method="loginDDT(test3, wrong3)">loginDDT(test3, wrong3)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" hash-for-method="loginDDT(test3, wrong3)">loginDDT(test3, wrong3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" class="method navigator-link" hash-for-method="loginDDT(test2, wrong2)">loginDDT(test2, wrong2)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginDDT_001" hash-for-method="loginDDT(test1, wrog)">loginDDT(test1, wrog)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-E_Banking_V1" title="eBanking.testCases.TC_LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-E_Banking_V1 -->
@@ -144,21 +163,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-E_Banking_V1" class="panel E_Banking_V1">
-          <div class="suite-E_Banking_V1-class-passed">
+          <div class="suite-E_Banking_V1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">eBanking.testCases.TC_AddNewCustomer</span>
+              <img src="failed.png"/>
+              <span class="class-name">eBanking.testCases.TC_LoginTest2_without_DDT</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCustomerTest">
-                  </a> <!-- addCustomerTest -->
-                  <span class="method-name">addCustomerTest</span>
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-E_Banking_V1-class-passed -->
+          </div> <!-- suite-E_Banking_V1-class-failed -->
           <div class="suite-E_Banking_V1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -167,18 +203,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginDDT(mngr385784, yhabUsa)">
-                  </a> <!-- loginDDT(mngr385784, yhabUsa) -->
+                  <a name="loginDDT(test2, wrong2)">
+                  </a> <!-- loginDDT(test2, wrong2) -->
                   <span class="method-name">loginDDT</span>
-                  <span class="parameters">(mngr385784, yhabUsa)</span>
+                  <span class="parameters">(test2, wrong2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginDDT(test1, wrog)">
-                  </a> <!-- loginDDT(test1, wrog) -->
+                  <a name="loginDDT(mngr385784, yhabUsa)">
+                  </a> <!-- loginDDT(mngr385784, yhabUsa) -->
                   <span class="method-name">loginDDT</span>
-                  <span class="parameters">(test1, wrog)</span>
+                  <span class="parameters">(mngr385784, yhabUsa)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -191,10 +227,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginDDT(test2, wrong2)">
-                  </a> <!-- loginDDT(test2, wrong2) -->
+                  <a name="loginDDT(test1, wrog)">
+                  </a> <!-- loginDDT(test1, wrog) -->
                   <span class="method-name">loginDDT</span>
-                  <span class="parameters">(test2, wrong2)</span>
+                  <span class="parameters">(test1, wrog)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,6 +250,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-E_Banking_V1-class-passed -->
+          <div class="suite-E_Banking_V1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eBanking.testCases.TC_AddNewCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest">
+                  </a> <!-- addCustomerTest -->
+                  <span class="method-name">addCustomerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-E_Banking_V1-class-passed -->
         </div> <!-- panel E_Banking_V1 -->
         <div panel-name="test-xml-E_Banking_V1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -223,16 +274,17 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;E-Banking_V1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;E-Banking_V1&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;eBanking.utilities.Reporting&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Banking App Login&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Banking App Login&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;eBanking.testCases.TC_LoginTest&quot;/&gt;
       &lt;class name=&quot;eBanking.testCases.TC_LoginDDT_001&quot;/&gt;
       &lt;class name=&quot;eBanking.testCases.TC_AddNewCustomer&quot;/&gt;
+      &lt;class name=&quot;eBanking.testCases.TC_LoginTest2_without_DDT&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Banking App Login --&gt;
 &lt;/suite&gt; &lt;!-- E-Banking_V1 --&gt;
@@ -246,7 +298,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Banking App Login (3 classes)</span>
+                <span class="test-name">Banking App Login (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,36 +324,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addCustomerTest')
 data.setCell(0, 2, 'eBanking.testCases.TC_AddNewCustomer')
-data.setCell(0, 3, 9597);
+data.setCell(0, 3, 23954);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginDDT')
-data.setCell(1, 2, 'eBanking.testCases.TC_LoginDDT_001')
-data.setCell(1, 3, 5849);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'eBanking.testCases.TC_LoginTest2_without_DDT')
+data.setCell(1, 3, 16700);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'eBanking.testCases.TC_LoginTest')
-data.setCell(2, 3, 5083);
+data.setCell(2, 2, 'eBanking.testCases.TC_LoginTest2_without_DDT')
+data.setCell(2, 3, 16329);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginDDT')
-data.setCell(3, 2, 'eBanking.testCases.TC_LoginDDT_001')
-data.setCell(3, 3, 3961);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'eBanking.testCases.TC_LoginTest')
+data.setCell(3, 3, 5875);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginDDT')
 data.setCell(4, 2, 'eBanking.testCases.TC_LoginDDT_001')
-data.setCell(4, 3, 3856);
+data.setCell(4, 3, 5082);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginDDT')
 data.setCell(5, 2, 'eBanking.testCases.TC_LoginDDT_001')
-data.setCell(5, 3, 3412);
+data.setCell(5, 3, 4024);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginDDT')
+data.setCell(6, 2, 'eBanking.testCases.TC_LoginDDT_001')
+data.setCell(6, 3, 3989);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginDDT')
+data.setCell(7, 2, 'eBanking.testCases.TC_LoginDDT_001')
+data.setCell(7, 3, 3569);
 window.suiteTableData['E_Banking_V1']= { tableData: data, tableDiv: 'times-div-E_Banking_V1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-E_Banking_V1">
               </div> <!-- times-div-E_Banking_V1 -->
             </div> <!-- times-div -->
@@ -334,53 +394,76 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">2364 ms</span>
+                <span class="method-start">2380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7472 ms</span>
+                <span class="method-start">8296 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">eBanking.testCases.TC_LoginDDT_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">7661 ms</span>
+                <span class="method-start">8977 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginDDT(mngr385784, yhabUsa)</span>
-                <span class="method-start">9850 ms</span>
+                <span class="method-start">11089 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginDDT(test1, wrog)</span>
-                <span class="method-start">15702 ms</span>
+                <span class="method-start">16173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginDDT(test2, wrong2)</span>
-                <span class="method-start">19559 ms</span>
+                <span class="method-start">19743 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginDDT(test3, wrong3)</span>
-                <span class="method-start">22972 ms</span>
+                <span class="method-start">23733 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">26933 ms</span>
+                <span class="method-start">27758 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">eBanking.testCases.TC_AddNewCustomer</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">27107 ms</span>
+                <span class="method-start">28459 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addCustomerTest</span>
-                <span class="method-start">28631 ms</span>
+                <span class="method-start">29996 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">38229 ms</span>
+                <span class="method-start">53950 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eBanking.testCases.TC_LoginTest2_without_DDT</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">54667 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">56123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">72830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">89162 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
