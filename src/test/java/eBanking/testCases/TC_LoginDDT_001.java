@@ -28,7 +28,7 @@ public class TC_LoginDDT_001 extends BaseClass {
 		if (isAleartPresent() == true) {
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
-			Assert.assertTrue(true);
+			Assert.assertTrue(false);
 			logger.warn("wrong credentials");
 		} else {
 			Assert.assertTrue(true);

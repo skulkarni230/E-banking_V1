@@ -48,13 +48,13 @@ public class Reporting extends TestListenerAdapter
 	public void onTestSuccess(ITestResult tr)
 	{
 		logger=extent.createTest(tr.getName());
-		logger.log(Status.PASS, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
+		logger.log(Status.PASS, MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN));
 	}
 	
 	public void onTestFailure(ITestResult tr)
 	{
 		logger=extent.createTest(tr.getName());
-		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN));
+		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 	
 		String screenshotPath = System.getProperty("user.dir")+"\\Screenshots"+tr.getName()+".png";
 		File f = new File(screenshotPath);
