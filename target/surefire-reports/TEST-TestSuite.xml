@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="11.362" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="5.933" tests="4" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.1+12"/>
@@ -24,7 +24,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Selenium Setup\UPC2.0\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf950614433780445287.tmp"/>
+    <property name="classworlds.conf" value="D:\Selenium Setup\UPC2.0\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16307980111422944636.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="D:\eclipse-java-2021-12-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/eclipse-java-2021-12-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin/server;D:/eclipse-java-2021-12-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\JavaFX\javafx-sdk1.2\bin;C:\Program Files (x86)\JavaFX\javafx-sdk1.2\emulator\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Users\sohan.kulkarni\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_77\bin;C:\Users\sohan.kulkarni\AppData\Local\Programs\Git\cmd;C:\Gradle\gradle-7.3.3\bin;D:\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;;D:\eclipse-java-2021-12-R-win32-x86_64\eclipse;;."/>
     <property name="jdk.debug" value="release"/>
@@ -57,5 +57,70 @@
     <property name="java.vendor.version" value="Temurin-17.0.1+12"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="addCustomerTest" classname="eBanking.testCases.TC_AddNewCustomer" time="11.362"/>
+  <testcase name="loginDDT" classname="eBanking.testCases.TC_LoginDDT_001" time="5.933">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+</failure>
+    <system-out><![CDATA[14:36:45.021 [main] INFO  eBanking.testCases.BaseClass - driver invoked
+14:36:49.725 [main] INFO  eBanking.testCases.BaseClass - Page Opened Successfully
+14:36:49.924 [main] INFO  eBanking.testCases.BaseClass - username added
+14:36:50.123 [main] INFO  eBanking.testCases.BaseClass - password added
+14:36:50.503 [main] INFO  eBanking.testCases.BaseClass - clicked on login button
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sohan.kulkarni\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 17589
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 01, 2022 2:36:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="loginDDT" classname="eBanking.testCases.TC_LoginDDT_001" time="4.281">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+</failure>
+    <system-out><![CDATA[14:36:54.157 [main] INFO  eBanking.testCases.BaseClass - Page Opened Successfully
+14:36:54.400 [main] INFO  eBanking.testCases.BaseClass - username added
+14:36:54.493 [main] INFO  eBanking.testCases.BaseClass - password added
+14:36:54.928 [main] INFO  eBanking.testCases.BaseClass - clicked on login button
+]]></system-out>
+  </testcase>
+  <testcase name="loginDDT" classname="eBanking.testCases.TC_LoginDDT_001" time="3.975">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+</failure>
+    <system-out><![CDATA[14:36:58.023 [main] INFO  eBanking.testCases.BaseClass - Page Opened Successfully
+14:36:58.162 [main] INFO  eBanking.testCases.BaseClass - username added
+14:36:58.305 [main] INFO  eBanking.testCases.BaseClass - password added
+14:36:58.753 [main] INFO  eBanking.testCases.BaseClass - clicked on login button
+]]></system-out>
+  </testcase>
+  <testcase name="loginDDT" classname="eBanking.testCases.TC_LoginDDT_001" time="3.35">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+</failure>
+    <system-out><![CDATA[14:37:01.623 [main] INFO  eBanking.testCases.BaseClass - Page Opened Successfully
+14:37:01.861 [main] INFO  eBanking.testCases.BaseClass - username added
+14:37:01.933 [main] INFO  eBanking.testCases.BaseClass - password added
+14:37:02.327 [main] INFO  eBanking.testCases.BaseClass - clicked on login button
+]]></system-out>
+  </testcase>
 </testsuite>

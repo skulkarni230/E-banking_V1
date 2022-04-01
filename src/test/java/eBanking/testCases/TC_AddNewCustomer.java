@@ -27,7 +27,21 @@ public class TC_AddNewCustomer extends BaseClass {
 		lp.setUserName(username);
 		lp.setPassword(password);
 		lp.clickLogin();
-		logger.info("Logged in Successfully");
+		logger.info("Clicked on login button");
+		
+		if (isAleartPresent() == true) {
+			logger.warn("Either credentials are expired or invalid");
+			driver.switchTo().alert().accept();
+			driver.switchTo().defaultContent();
+			Assert.assertTrue(false);
+			
+		} else {
+			Assert.assertTrue(true);
+			logger.info("logged in successfully");			
+		}
+	
+		
+		
 		
 		
 		//Thread.sleep(3000L);
@@ -92,14 +106,7 @@ public class TC_AddNewCustomer extends BaseClass {
 		
 	}
 	
-	public boolean isAleartPresent() {
-		try {
-			driver.switchTo().alert();
-			return true;
-		} catch (NoAlertPresentException e) {
-			return false;
-		}
-	}
+	
 	
 	
 

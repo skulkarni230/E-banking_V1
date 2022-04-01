@@ -13,10 +13,10 @@
 		
 
 		<classes>
-			 <!--  <class name="eBanking.testCases.TC_LoginTest" /> --> 
-			<!-- <class name="eBanking.testCases.TC_LoginDDT_001" /> -->
-			<class name="eBanking.testCases.TC_AddNewCustomer"/>
-			<!-- <class name="eBanking.testCases.TC_LoginTest2_without_DDT"/> -->
+		    <!--  <class name="eBanking.testCases.TC_LoginTest" />--> 
+			 <class name="eBanking.testCases.TC_LoginDDT_001" /> 
+			<!--  <class name="eBanking.testCases.TC_AddNewCustomer"/> -->
+			 <!-- <class name="eBanking.testCases.TC_LoginTest2_without_DDT"/> -->
 		</classes>
 
 

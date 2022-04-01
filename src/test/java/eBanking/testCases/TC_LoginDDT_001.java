@@ -7,12 +7,13 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import eBanking.dataProviders.*;
 import eBanking.pageObject.LoginPage;
 import eBanking.utilities.XLUtility;
 
 public class TC_LoginDDT_001 extends BaseClass {
 
-	@Test(dataProvider = "LoginData")
+	@Test(dataProvider = "LoginData", dataProviderClass = dataProviderArray.class)
 	public void loginDDT(String user, String password) {
 
 		driver.get(baseURL);
@@ -43,7 +44,7 @@ public class TC_LoginDDT_001 extends BaseClass {
 	}
 	
 	
-	
+	/*
 
 	@DataProvider(name = "LoginData")
 	String[][] getData() throws IOException {
@@ -65,6 +66,6 @@ public class TC_LoginDDT_001 extends BaseClass {
 			}
 		}
 		return logindata;
-	}
+	}*/
 
 }
