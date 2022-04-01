@@ -37,8 +37,8 @@ public class BaseClass{
 	ReadConfig readconfig = new ReadConfig();
 	public Properties prop;
 	public String baseURL = "https://demo.guru99.com/v4/index.php";
-	public String username = "mngr390876";
-	public String password = "EgudApU";
+	public String username = "mngr396671";
+	public String password = "tEtenen";
 	
 	
 	

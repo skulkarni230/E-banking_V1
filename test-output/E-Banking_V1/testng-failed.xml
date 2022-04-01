@@ -14,6 +14,20 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- eBanking.testCases.TC_LoginDDT_001 -->
+      <class name="eBanking.testCases.TC_LoginTest2_without_DDT">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- eBanking.testCases.TC_LoginTest2_without_DDT -->
+      <class name="eBanking.testCases.TC_AddNewCustomer">
+        <methods>
+          <include name="addCustomerTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- eBanking.testCases.TC_AddNewCustomer -->
     </classes>
   </test> <!-- Banking App Login(failed) -->
 </suite> <!-- Failed suite [E-Banking_V1] -->

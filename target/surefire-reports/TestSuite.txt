@@ -1,36 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 23.499 sec <<< FAILURE! - in TestSuite
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 5.933 sec  <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.463 sec <<< FAILURE! - in TestSuite
+loginTest(eBanking.testCases.TC_LoginTest2_without_DDT)  Time elapsed: 5.97 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
 	at org.testng.Assert.assertTrue(Assert.java:55)
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
 
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 4.281 sec  <<< FAILURE!
+loginTest(eBanking.testCases.TC_LoginTest2_without_DDT)  Time elapsed: 3.364 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
 	at org.testng.Assert.assertTrue(Assert.java:55)
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
-
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 3.975 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
-
-loginDDT(eBanking.testCases.TC_LoginDDT_001)  Time elapsed: 3.35 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
 
