@@ -69,15 +69,17 @@ public class XLUtility {
 
 	}
 	
-	public void setCellData(String xlFile,String xlsheet,int rownum,int colnum,String data) throws IOException
+	public void setCellData(String sheetName,int rownum,int colnum,String data) throws IOException
 	{
-		fi=new FileInputStream(xlFile);
+		fi=new FileInputStream(path);
 		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(xlsheet);
+		sheet=workbook.getSheet(sheetName);
+		
 		row= sheet.getRow(rownum);
 		cell=row.createCell(colnum);
 		cell.setCellValue(data);
-		fo=new FileOutputStream(xlFile);
+		
+		fo=new FileOutputStream(path);
 		workbook.write(fo);		
 		workbook.close();
 		fi.close();

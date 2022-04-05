@@ -13,6 +13,7 @@ import eBanking.utilities.XLUtility;
 
 public class TC_LoginDDT_001 extends BaseClass {
 
+	
 	@Test(dataProvider = "LoginData", dataProviderClass = dataProviderArray.class)
 	public void loginDDT(String user, String password) throws IOException, InterruptedException {
 
