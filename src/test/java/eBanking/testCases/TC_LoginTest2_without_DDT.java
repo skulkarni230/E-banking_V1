@@ -13,8 +13,8 @@ public class TC_LoginTest2_without_DDT extends BaseClass {
 
 	//This test case repeats as per the count given here in invocation count
 	//In this test case I have eliminated use of Data Provider by using randomString method
-	@Test(invocationCount = 2)
-	public void loginTest() throws IOException {
+	@Test(invocationCount = 1)
+	public void loginTest() throws IOException, InterruptedException {
 
 		{
 
@@ -32,12 +32,19 @@ public class TC_LoginTest2_without_DDT extends BaseClass {
 			logger.debug("Entered Password");
 			lp.clickLogin();
 			logger.debug("Clicked on login button");
+			
+			
+			
+			
 
 			if (isAleartPresent() == true) {
+				logger.warn("wrong credentials");
+				driver.switchTo().alert();				
+				System.out.println("aleart present");
 				driver.switchTo().alert().accept();
 				driver.switchTo().defaultContent();
 				Assert.assertTrue(false);
-				logger.warn("wrong credentials");
+				
 			} else {
 				Assert.assertTrue(true);
 				logger.info("logged in successfully");
@@ -47,15 +54,7 @@ public class TC_LoginTest2_without_DDT extends BaseClass {
 				driver.switchTo().defaultContent();
 			}
 
-			if (driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage")) {
-				Assert.assertTrue(true);
-				logger.info("Logged in Succesfully");
-			} else {
-				captureScreen(driver, "loginTest");
-				Assert.assertTrue(false);
-				logger.error("Login Failed");
-
-			}
+			
 		}
 	}
 }

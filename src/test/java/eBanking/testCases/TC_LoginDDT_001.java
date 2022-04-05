@@ -14,7 +14,7 @@ import eBanking.utilities.XLUtility;
 public class TC_LoginDDT_001 extends BaseClass {
 
 	@Test(dataProvider = "LoginData", dataProviderClass = dataProviderArray.class)
-	public void loginDDT(String user, String password) {
+	public void loginDDT(String user, String password) throws IOException, InterruptedException {
 
 		driver.get(baseURL);
 		logger.info("Page Opened Successfully");
@@ -25,8 +25,11 @@ public class TC_LoginDDT_001 extends BaseClass {
 		logger.info("password added");
 		lp.clickLogin();
 		logger.info("clicked on login button");
+		
+		
 
 		if (isAleartPresent() == true) {
+			
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
 			Assert.assertTrue(false);
@@ -41,10 +44,13 @@ public class TC_LoginDDT_001 extends BaseClass {
 		}
 		
 		
+		
+		
 	}
 	
 	
 	/*
+	 * 
 
 	@DataProvider(name = "LoginData")
 	String[][] getData() throws IOException {

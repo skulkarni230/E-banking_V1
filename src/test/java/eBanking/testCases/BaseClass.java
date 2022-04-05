@@ -80,7 +80,7 @@ public class BaseClass{
 	
 	//Method to take screenshot on failure of test case
 	public void captureScreen(WebDriver driver, String tname) throws IOException
-	{
+	{		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File target = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");

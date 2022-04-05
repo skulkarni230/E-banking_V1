@@ -9,60 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">E-Banking_V1</th></tr>
-<tr><td><a href="#t0">Banking App Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">59,889</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Banking App Login</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">180,779</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E-Banking_V1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Banking App Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">eBanking.testCases.TC_AddNewCustomer</td><td><a href="#m0">addCustomerTest</a></td><td rowspan="1">1648804656947</td><td rowspan="1">16551</td></tr><tr class="failedodd"><td rowspan="4">eBanking.testCases.TC_LoginDDT_001</td><td><a href="#m1">loginDDT</a></td><td rowspan="4">1648804650752</td><td rowspan="4">4283</td></tr><tr class="failedodd"><td><a href="#m2">loginDDT</a></td></tr><tr class="failedodd"><td><a href="#m3">loginDDT</a></td></tr><tr class="failedodd"><td><a href="#m4">loginDDT</a></td></tr><tr class="failedeven"><td rowspan="2">eBanking.testCases.TC_LoginTest2_without_DDT</td><td><a href="#m5">loginTest</a></td><td rowspan="2">1648804681335</td><td rowspan="2">3370</td></tr><tr class="failedeven"><td><a href="#m6">loginTest</a></td></tr><tr><th colspan="4">Banking App Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">eBanking.testCases.TC_LoginTest</td><td><a href="#m7">loginTest</a></td><td rowspan="1">1648804627806</td><td rowspan="1">5708</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E-Banking_V1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Banking App Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">eBanking.testCases.TC_LoginTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1649084121154</td><td rowspan="1">98149</td></tr></tbody>
 </table>
-<h2>Banking App Login</h2><h3 id="m0">eBanking.testCases.TC_AddNewCustomer#addCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;name&apos;]&quot;}
-  (Session info: chrome=99.0.4844.84)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;AHM-L-SOHANK&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOHAN~1.KUL\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4fa22f2bf833adcb534d25733c5bf953
-*** Element info: {Using=name, value=name}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at eBanking.pageObject.AddCustomerPage.custname(AddCustomerPage.java:76)
-	at eBanking.testCases.TC_AddNewCustomer.addCustomerTest(TC_AddNewCustomer.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test3</td><td>wrong3</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
+<h2>Banking App Login</h2><h3 id="m0">eBanking.testCases.TC_LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at eBanking.testCases.TC_LoginTest.loginTest(TC_LoginTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr385784</td><td>yhabUsa</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test1</td><td>wrog</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">eBanking.testCases.TC_LoginDDT_001#loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test2</td><td>wrong2</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginDDT_001.loginDDT(TC_LoginDDT_001.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">eBanking.testCases.TC_LoginTest2_without_DDT#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">eBanking.testCases.TC_LoginTest2_without_DDT#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at eBanking.testCases.TC_LoginTest2_without_DDT.loginTest(TC_LoginTest2_without_DDT.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">eBanking.testCases.TC_LoginTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
