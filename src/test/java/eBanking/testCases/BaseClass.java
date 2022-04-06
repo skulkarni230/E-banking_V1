@@ -36,9 +36,9 @@ public class BaseClass{
 	
 	ReadConfig readconfig = new ReadConfig();
 	public Properties prop;
-	public String baseURL = "https://demo.guru99.com/v4/index.php";
-	public String username = "mngr396671";
-	public String password = "tEtenen";
+	//public String baseURL = "https://demo.guru99.com/v4/index.php";
+	//public String username = "mngr396671";
+	//public String password = "tEtenen";
 	
 	
 	
@@ -58,14 +58,16 @@ public class BaseClass{
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());	
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		}
 		
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "//Drivers//geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "//Drivers//geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver",readconfig.getFireFoxPath());
 			driver = new FirefoxDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

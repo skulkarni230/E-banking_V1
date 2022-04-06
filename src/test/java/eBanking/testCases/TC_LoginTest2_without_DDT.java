@@ -18,7 +18,7 @@ public class TC_LoginTest2_without_DDT extends BaseClass {
 
 		{
 
-			driver.get(baseURL);
+			//driver.get(baseURL);
 			logger.info("Page Opened Successfully");
 
 			String uname1 = randomString() + "@gamil.com";

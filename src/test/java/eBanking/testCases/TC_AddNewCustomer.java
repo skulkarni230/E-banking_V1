@@ -22,10 +22,9 @@ public class TC_AddNewCustomer extends BaseClass {
 	{
 		LoginPage lp = new LoginPage(driver);
 		AddCustomerPage ac = new AddCustomerPage(driver);
-		
-		driver.get(baseURL);
-		lp.setUserName(username);
-		lp.setPassword(password);
+		driver.get(readconfig.getURL());
+		lp.setUserName(readconfig.getUserName());
+		lp.setPassword(readconfig.getPassword());
 		lp.clickLogin();
 		logger.info("Clicked on login button");
 		

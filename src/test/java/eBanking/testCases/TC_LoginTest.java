@@ -11,7 +11,10 @@ public class TC_LoginTest extends BaseClass {
 
 	@Test
 	public void loginTest() throws IOException {
-		driver.get(baseURL);
+		//driver.get(baseURL);
+		//driver.get(readconfig.getURL());
+		driver.get(readconfig.getURL());
+		
 		logger.info("Page Opened Successfully");
 		/*if (driver.getTitle().equals("Guru99 Demo Sites")) {
 			Assert.assertTrue(true);
@@ -20,11 +23,13 @@ public class TC_LoginTest extends BaseClass {
 		}*/
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.setUserName(username);
-		System.out.println(username);
+		//lp.setUserName(username);
+		lp.setUserName(readconfig.getUserName());
+		System.out.println(readconfig.getUserName());
 		logger.debug("Entered UserName");
-		lp.setPassword(password);
-		System.out.println(password);
+		//lp.setPassword(password);
+		lp.setPassword(readconfig.getPassword());
+		System.out.println(readconfig.getPassword());
 		logger.debug("Entered Password");
 		lp.clickLogin();
 		logger.debug("Clicked on login button");
