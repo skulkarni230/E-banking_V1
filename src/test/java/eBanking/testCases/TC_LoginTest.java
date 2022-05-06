@@ -33,8 +33,18 @@ public class TC_LoginTest extends BaseClass {
 		logger.debug("Entered Password");
 		lp.clickLogin();
 		logger.debug("Clicked on login button");
+		
+		if (isAleartPresent() == true) {
+			logger.warn("Either credentials are expired or invalid");
+			captureScreen(driver,"loginTest");
+			driver.switchTo().alert().accept();
+			driver.switchTo().defaultContent();
+			Assert.assertTrue(false);
+			
+		} 			
+		
 
-		if (driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage")) {
+		  if (driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage")) {
 			Assert.assertTrue(true);
 			logger.info("Logged in Succesfully");
 		} else {

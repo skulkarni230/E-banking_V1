@@ -18,6 +18,8 @@ import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import eBanking.testCases.BaseClass;
+
 public class Reporting extends TestListenerAdapter
 {
 	public ExtentSparkReporter htmlReporter;
@@ -54,9 +56,10 @@ public class Reporting extends TestListenerAdapter
 	public void onTestFailure(ITestResult tr)
 	{
 		logger=extent.createTest(tr.getName());
+		logger.fail(tr.getThrowable());
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 	
-		String screenshotPath = System.getProperty("user.dir")+"\\Screenshots"+tr.getName()+".png";
+		String screenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+ tr.getName()+ "-" + BaseClass.timeStamp +".png";
 		File f = new File(screenshotPath);
 		
 		if(f.exists())

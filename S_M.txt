@@ -99,3 +99,12 @@ Accepting and switching back to default content -
 
 	}
 
+
+##### Explicit wait methods
+
+	// explicit wait - to wait for the compose button to be click-able
+	WebDriverWait wait = new WebDriverWait(driver,30);
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
+
+##### Timestamp 
+	String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());

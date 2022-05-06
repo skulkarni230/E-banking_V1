@@ -43,3 +43,10 @@ By.linkText("Text present in 'a' tag)
 #### Traversing from parent to child
 Xpath- //parentTag/childTag
 css - parentTag childTag (CSS should not contain any space)
+
+#### following-siblings methods
+
+//span[text()='Status']/../following-sibling::td/span/a
+
+#### preceding-sibling
+to find 

@@ -7,6 +7,13 @@
   <test thread-count="5" name="Banking App Login(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="eBanking.testCases.TC_LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- eBanking.testCases.TC_LoginTest -->
       <class name="eBanking.testCases.TC_AddNewCustomer">
         <methods>
           <include name="addCustomerTest"/>

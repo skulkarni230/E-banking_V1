@@ -1,0 +1,18 @@
+Github New Push -
+
+1. git init 
+2. git remote add origin "https:\\url"
+3. git status
+4. git add -A
+
+5. git config --global user.name "name"
+   git config --global user.email"email"
+
+6. git commit -m "message"
+7. git push origin master
+
+
+
+GitLab - 
+
+	

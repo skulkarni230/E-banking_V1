@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -36,14 +38,11 @@ public class BaseClass{
 	
 	ReadConfig readconfig = new ReadConfig();
 	public Properties prop;
-	//public String baseURL = "https://demo.guru99.com/v4/index.php";
-	//public String username = "mngr396671";
-	//public String password = "tEtenen";
-	
 	
 	
 	public static WebDriver driver;
 	public static Logger logger;
+	public static String timeStamp;
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -84,8 +83,9 @@ public class BaseClass{
 	public void captureScreen(WebDriver driver, String tname) throws IOException
 	{		
 		TakesScreenshot ts = (TakesScreenshot) driver;
+		timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File target = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");
+		File target = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+ "-"+ timeStamp +".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken for failed testcase");
 	}
